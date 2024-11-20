@@ -1,0 +1,317 @@
+[
+    {
+      "name": "MacBook Pro 14 M1 Max",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 2499,
+      "rate": 4.8,
+      "description": "The MacBook Pro 14 M1 Max is a powerhouse of a laptop designed for creative professionals and developers alike. Featuring Apple's M1 Max chip with up to 32 GPU cores, it delivers unmatched speed and efficiency for tasks such as video editing, 3D rendering, and software development. With up to 64GB of unified memory and 8TB of storage, this machine is built to handle the most demanding workflows. The stunning Liquid Retina XDR display with a 120Hz ProMotion refresh rate offers incredible color accuracy and detail, making it perfect for photographers, filmmakers, and graphic designers. Additionally, its all-day battery life ensures productivity on the go.",
+      "review": "(320 Reviews)",
+      "colors": ["#000000", "#C0C0C0"]
+    },
+    {
+      "name": "Alienware m15 R6",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 2199,
+      "rate": 4.6,
+      "description": "The Alienware m15 R6 is a premium gaming laptop engineered to provide the best possible gaming experience. Powered by Intel's latest processors and NVIDIA GeForce RTX 3080 graphics, it offers lightning-fast performance and stunning ray-traced graphics. With a 15.6-inch QHD display and up to 360Hz refresh rate, gamers can enjoy ultra-smooth gameplay with high-resolution visuals. It also includes an advanced cooling system to ensure optimal performance during extended gaming sessions. Whether you're playing AAA titles or running VR applications, the m15 R6 has the power and speed to keep you ahead of the competition.",
+      "review": "(280 Reviews)",
+      "colors": ["#000000", "#808080"]
+    },
+    {
+      "name": "MSI GS66 Stealth",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1999,
+      "rate": 4.7,
+      "description": "The MSI GS66 Stealth is a sleek and powerful gaming laptop designed for gamers who value both performance and portability. It features a 10th Gen Intel Core i7 processor, NVIDIA RTX 3070 graphics, and a 240Hz display, making it ideal for competitive gaming and high-demand applications. Its minimalist design and thin form factor make it easy to carry, while the long-lasting battery ensures you can game or work for hours on end. In addition, the GS66 comes with Cooler Boost Trinity+ technology, keeping the device cool during intense gaming sessions. Whether you're streaming, working on creative projects, or gaming, this laptop is up to the task.",
+      "review": "(150 Reviews)",
+      "colors": ["#000000"]
+    },
+    {
+      "name": "Dell XPS 15 9500",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1899,
+      "rate": 4.5,
+      "description": "The Dell XPS 15 9500 is the ultimate laptop for creative professionals. Equipped with up to a 10th Gen Intel Core i9 processor, NVIDIA GTX 1650 Ti graphics, and a stunning 4K UHD+ InfinityEdge display, it offers superior performance for photo editing, video production, and graphic design. The near-borderless screen and wide color gamut provide breathtaking visuals, making it a joy to use for both work and entertainment. Additionally, the XPS 15 boasts a high-quality build with a carbon-fiber palm rest and diamond-cut edges, providing both durability and a premium look. With up to 32GB of RAM and 2TB SSD, you'll have plenty of power and storage to handle any project.",
+      "review": "(200 Reviews)",
+      "colors": ["#C0C0C0", "#FFFFFF"]
+    },
+    {
+      "name": "Razer Blade 15 Advanced",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 2499,
+      "rate": 4.4,
+      "description": "The Razer Blade 15 Advanced is known for being one of the most powerful gaming laptops on the market, featuring cutting-edge technology and a slim design. With options for the latest Intel processors and NVIDIA RTX 3080 graphics, it provides top-tier performance in a portable form factor. The Blade 15 Advanced comes with a 4K OLED display that offers vivid colors and deep blacks, perfect for gaming or content creation. It also features per-key RGB lighting powered by Razer Chroma, allowing you to customize your keyboard to match your gaming style. Whether you're editing videos, creating 3D models, or playing the latest games, the Razer Blade 15 Advanced can handle it all.",
+      "review": "(180 Reviews)",
+      "colors": ["#000000", "#00FF00"]
+    },
+    {
+      "name": "HP Spectre x360 14",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1599,
+      "rate": 4.7,
+      "description": "The HP Spectre x360 14 is a versatile 2-in-1 laptop designed for both work and play. Its 11th Gen Intel Core i7 processor and Intel Iris Xe graphics deliver excellent performance for everyday tasks, while the 13.5-inch OLED touch display offers stunning visuals for streaming, design, and light gaming. With its 360-degree hinge, you can easily switch between laptop, tent, and tablet modes, making it perfect for presentations, note-taking, and entertainment on the go. The Spectre x360 14 also includes a built-in privacy screen, long battery life, and fast charging capabilities, making it one of the best options for business professionals and students alike.",
+      "review": "(120 Reviews)",
+      "colors": ["#0000FF", "#A69A54"]
+    },
+    {
+      "name": "Lenovo ThinkPad X1 Carbon Gen 9",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1799,
+      "rate": 4.6,
+      "description": "The Lenovo ThinkPad X1 Carbon Gen 9 is a lightweight, durable business laptop with top-notch security features and a premium build. Powered by Intel's 11th Gen processors and Intel Iris Xe graphics, it delivers exceptional performance for business applications, multitasking, and light content creation. The X1 Carbon includes a brilliant 14-inch display, a legendary ThinkPad keyboard, and an array of ports for connectivity. Built with military-grade durability, this laptop can withstand tough conditions, making it ideal for on-the-go professionals. With up to 16 hours of battery life, you'll have more than enough power to get through your day without needing to recharge.",
+      "review": "(300 Reviews)",
+      "colors": ["#000000"]
+    },
+    {
+      "name": "Asus ROG Zephyrus G14",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1999,
+      "rate": 4.8,
+      "description": "The Asus ROG Zephyrus G14 is a compact yet powerful gaming laptop, featuring an AMD Ryzen 9 processor and NVIDIA RTX 3060 graphics. With a 14-inch QHD display and a 120Hz refresh rate, it provides vibrant visuals and smooth gameplay. Its unique AniMe Matrix display lets you customize animations, making it a standout device. The lightweight design and excellent battery life make it perfect for gaming on the go.",
+      "review": "(250 Reviews)",
+      "colors": ["#000000", "#FFFFFF"]
+  },
+  {
+      "name": "Apple MacBook Air M2",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1199,
+      "rate": 4.7,
+      "description": "The Apple MacBook Air M2 combines power with portability. Featuring Apple's M2 chip, it offers exceptional performance for everyday tasks. The Retina display provides sharp visuals, and the fanless design ensures silent operation. With impressive battery life and lightweight construction, it's perfect for students and professionals alike.",
+      "review": "(400 Reviews)",
+      "colors": ["#C0C0C0"]
+  },
+  {
+      "name": "Acer Predator Helios 300",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1499,
+      "rate": 4.5,
+      "description": "The Acer Predator Helios 300 is designed for gamers who demand high performance. It comes with an Intel Core i7 processor and NVIDIA GeForce RTX 3070 graphics, offering power for the latest games. The 15.6-inch FHD display and a 144Hz refresh rate ensure smooth visuals. With a robust cooling system, it maintains performance during intense gaming sessions.",
+      "review": "(210 Reviews)",
+      "colors": ["#000000", "#FF0000"]
+  },
+  {
+      "name": "Microsoft Surface Laptop 4",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1399,
+      "rate": 4.6,
+      "description": "The Microsoft Surface Laptop 4 offers a premium experience with its sleek design and high-resolution PixelSense touchscreen. It is powered by Intel's latest processors and provides up to 32GB of RAM. The exceptional battery life and lightweight build make it perfect for professionals and students on the go.",
+      "review": "(320 Reviews)",
+      "colors": ["#A69A54", "#FFFFFF"]
+  },
+  {
+      "name": "Razer Blade Stealth 13",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1799,
+      "rate": 4.4,
+      "description": "The Razer Blade Stealth 13 is a premium ultrabook designed for gaming and productivity. It features an Intel Core i7 processor and NVIDIA GTX 1650 Ti graphics. The 13.3-inch Full HD display with a 120Hz refresh rate ensures vibrant visuals. Its compact design makes it easy to carry, while the customizable RGB keyboard adds a personal touch.",
+      "review": "(150 Reviews)",
+      "colors": ["#000000", "#00FF00"]
+  },
+  {
+      "name": "Lenovo Legion 5 Pro",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1899,
+      "rate": 4.7,
+      "description": "The Lenovo Legion 5 Pro is a gaming laptop featuring AMD Ryzen processors and NVIDIA RTX 3060 graphics. Its 16-inch QHD display provides stunning visuals with a 165Hz refresh rate, making it ideal for gamers. The robust cooling system and customizable RGB lighting enhance the gaming experience.",
+      "review": "(280 Reviews)",
+      "colors": ["#000000", "#FF7F50"]
+  },
+  {
+      "name": "HP Omen 15",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1499,
+      "rate": 4.5,
+      "description": "The HP Omen 15 is a powerful gaming laptop with an Intel Core i7 processor and NVIDIA RTX 3060 graphics. It features a 15.6-inch FHD display with a high refresh rate, providing smooth gameplay. The stylish design and effective cooling system make it suitable for long gaming sessions.",
+      "review": "(220 Reviews)",
+      "colors": ["#000000", "#FF4500"]
+  },
+  {
+      "name": "Gigabyte Aorus 15G",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1999,
+      "rate": 4.6,
+      "description": "The Gigabyte Aorus 15G is designed for gamers and content creators, featuring Intel's latest processors and NVIDIA RTX 3070 graphics. The 15.6-inch FHD display with a 240Hz refresh rate ensures immersive visuals. It also includes advanced cooling technology to maintain peak performance.",
+      "review": "(190 Reviews)",
+      "colors": ["#000000", "#00BFFF"]
+  },
+  {
+      "name": "Dell G5 15",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1299,
+      "rate": 4.4,
+      "description": "The Dell G5 15 is a budget-friendly gaming laptop that doesn't compromise on performance. Equipped with an Intel Core i5 processor and NVIDIA GTX 1660 Ti graphics, it can handle most modern games. The 15.6-inch FHD display and decent battery life make it a great choice for gamers on a budget.",
+      "review": "(200 Reviews)",
+      "colors": ["#000000", "#FF8C00"]
+  },
+    {
+      "name": "Acer Swift 3",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 999,
+      "rate": 4.5,
+      "description": "The Acer Swift 3 is a lightweight ultrabook ideal for everyday use. Featuring an AMD Ryzen 7 processor and a 14-inch FHD display, it offers excellent performance for productivity tasks. Its sleek design and long battery life make it a great companion for students and professionals.",
+      "review": "(300 Reviews)",
+      "colors": ["#C0C0C0", "#FFFFFF"]
+  },
+    {
+      "name": "HP Envy x360 15",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1299,
+      "rate": 4.6,
+      "description": "The HP Envy x360 15 is a versatile 2-in-1 laptop that combines performance with flexibility. Featuring an AMD Ryzen 5 processor and a stunning 15.6-inch FHD touchscreen, it is perfect for both work and play. Its sleek design and long battery life make it a great option for on-the-go professionals.",
+      "review": "(250 Reviews)",
+      "colors": ["#000000", "#B22222"]
+    },
+    {
+      "name": "Asus VivoBook 15",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 749,
+      "rate": 4.4,
+      "description": "The Asus VivoBook 15 is an affordable laptop featuring an Intel Core i5 processor and a 15.6-inch FHD display. With its lightweight design and vibrant colors, it's perfect for students and casual users who need a reliable device for everyday tasks.",
+      "review": "(180 Reviews)",
+      "colors": ["#C0C0C0", "#FFD700"]
+    },
+    {
+      "name": "Dell Latitude 7420",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1799,
+      "rate": 4.6,
+      "description": "The Dell Latitude 7420 is a business laptop designed for professionals. It features Intel's latest processors and a 14-inch FHD display with excellent color accuracy. With a robust design and impressive battery life, it is ideal for those who work on the go.",
+      "review": "(200 Reviews)",
+      "colors": ["#000000", "#A9A9A9"]
+    },
+    {
+      "name": "Acer Aspire 5",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 599,
+      "rate": 4.3,
+      "description": "The Acer Aspire 5 offers great performance for its price. With an AMD Ryzen 5 processor and a 15.6-inch FHD display, it's perfect for students and everyday users. The backlit keyboard and decent battery life enhance the overall experience.",
+      "review": "(150 Reviews)",
+      "colors": ["#FFFFFF", "#ADD8E6"]
+    },
+    {
+      "name": "Lenovo IdeaPad 3",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 549,
+      "rate": 4.2,
+      "description": "The Lenovo IdeaPad 3 is a budget-friendly laptop equipped with an Intel Core i3 processor and a 14-inch FHD display. It's lightweight and ideal for web browsing, streaming, and light productivity tasks.",
+      "review": "(120 Reviews)",
+      "colors": ["#C0C0C0", "#FF69B4"]
+    },
+    {
+      "name": "MSI Creator 15",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 2499,
+      "rate": 4.7,
+      "description": "The MSI Creator 15 is designed for content creators, featuring Intel's latest processors and NVIDIA RTX 3070 graphics. Its 15.6-inch 4K display offers exceptional color accuracy, making it perfect for video editing and graphic design.",
+      "review": "(200 Reviews)",
+      "colors": ["#000000", "#FFD700"]
+    },
+    {
+      "name": "Gigabyte Aero 15",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 2499,
+      "rate": 4.8,
+      "description": "The Gigabyte Aero 15 is a high-performance laptop for creatives, featuring Intel's latest processors and NVIDIA RTX 3080 graphics. The 15.6-inch 4K AMOLED display provides stunning visuals for design work and multimedia consumption.",
+      "review": "(190 Reviews)",
+      "colors": ["#000000", "#FF4500"]
+    },
+    {
+      "name": "Acer Chromebook Spin 713",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 699,
+      "rate": 4.5,
+      "description": "The Acer Chromebook Spin 713 is a 2-in-1 convertible laptop powered by Intel Core processors. Its 13.5-inch 2K display offers sharp visuals, making it ideal for productivity and streaming. Lightweight and versatile, it's perfect for students and professionals who need a portable device.",
+      "review": "(140 Reviews)",
+      "colors": ["#FFFFFF", "#4682B4"]
+    },
+    {
+      "name": "Samsung Galaxy Book Pro 360",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1599,
+      "rate": 4.6,
+      "description": "The Samsung Galaxy Book Pro 360 is a premium 2-in-1 laptop featuring Intel's latest processors and a stunning AMOLED touchscreen. With its lightweight design and long battery life, it's perfect for both work and entertainment on the go.",
+      "review": "(220 Reviews)",
+      "colors": ["#000000", "#FFE4B5"]
+    },
+    {
+      "name": "Dell Inspiron 14 5000",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 849,
+      "rate": 4.4,
+      "description": "The Dell Inspiron 14 5000 is a versatile laptop featuring an Intel Core i5 processor and a 14-inch FHD display. With a sleek design and solid performance, it's perfect for students and professionals who need a reliable device for everyday tasks.",
+      "review": "(160 Reviews)",
+      "colors": ["#C0C0C0", "#FFFFFF"]
+  },
+  {
+      "name": "HP Pavilion 15",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 749,
+      "rate": 4.5,
+      "description": "The HP Pavilion 15 is an affordable laptop that combines performance with style. Equipped with an AMD Ryzen 5 processor and a 15.6-inch FHD display, it delivers great performance for both work and entertainment.",
+      "review": "(200 Reviews)",
+      "colors": ["#000000", "#FF6347"]
+  },
+  {
+      "name": "Lenovo Flex 5",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 849,
+      "rate": 4.7,
+      "description": "The Lenovo Flex 5 is a flexible 2-in-1 laptop featuring an AMD Ryzen 7 processor and a vibrant 14-inch touchscreen display. With its 360-degree hinge, it's perfect for both productivity and entertainment.",
+      "review": "(210 Reviews)",
+      "colors": ["#C0C0C0", "#DDA0DD"]
+  },
+  {
+      "name": "Asus ZenBook 14",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1399,
+      "rate": 4.6,
+      "description": "The Asus ZenBook 14 is a premium ultrabook featuring Intel's latest processors and a stunning 14-inch FHD display. Its lightweight design and long battery life make it ideal for professionals and frequent travelers.",
+      "review": "(180 Reviews)",
+      "colors": ["#000000", "#FFE4E1"]
+  },
+  {
+      "name": "Acer Predator Triton 500",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1999,
+      "rate": 4.8,
+      "description": "The Acer Predator Triton 500 is a high-performance gaming laptop featuring Intel's latest processors and NVIDIA RTX 3080 graphics. Its 15.6-inch FHD display with a 300Hz refresh rate ensures ultra-smooth gameplay.",
+      "review": "(230 Reviews)",
+      "colors": ["#000000", "#00BFFF"]
+  },
+  {
+      "name": "Microsoft Surface Book 3",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1999,
+      "rate": 4.7,
+      "description": "The Microsoft Surface Book 3 is a powerful 2-in-1 laptop designed for creatives. It features Intel's latest processors and a stunning PixelSense display. With its detachable screen, it can be used as a tablet or laptop, providing versatility for any task.",
+      "review": "(190 Reviews)",
+      "colors": ["#C0C0C0", "#FF69B4"]
+  },
+  {
+      "name": "Razer Blade 14",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 2499,
+      "rate": 4.9,
+      "description": "The Razer Blade 14 is a compact gaming laptop featuring AMD Ryzen 9 processors and NVIDIA RTX 3080 graphics. Its 14-inch QHD display offers excellent color accuracy, making it perfect for gaming and content creation.",
+      "review": "(250 Reviews)",
+      "colors": ["#000000", "#32CD32"]
+  },
+  {
+      "name": "HP ProBook 450 G8",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1099,
+      "rate": 4.5,
+      "description": "The HP ProBook 450 G8 is a business laptop featuring Intel Core i5 processors and a durable design. Its 15.6-inch FHD display provides clear visuals for productivity tasks, making it suitable for professionals on the go.",
+      "review": "(170 Reviews)",
+      "colors": ["#000000", "#808080"]
+  },
+  {
+      "name": "Samsung Notebook 9",
+      "imagePath": "images/products/mbp14-m3-max-pro-spaceblack-select-202310.jpg",
+      "price": 1399,
+      "rate": 4.6,
+      "description": "The Samsung Notebook 9 is a lightweight laptop featuring Intel Core i7 processors and a 15-inch FHD display. With its sleek design and long battery life, it is perfect for professionals and students who need a reliable device.",
+      "review": "(160 Reviews)",
+      "colors": ["#C0C0C0", "#4682B4"]
+  }
+  ]
