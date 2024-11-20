@@ -15,6 +15,8 @@ class SplashPage extends StatelessWidget {
           children: [
             SvgPicture.asset(
               "images/logo-app/logo.svg",
+              width: 150, // chiều rộng mong muốn
+              height: 150, // chiều cao mong muốn
             ),
             LoadingAnimationWidget.threeRotatingDots(
               color: const Color.fromARGB(255, 255, 255, 255),
