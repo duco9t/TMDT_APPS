@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:HDTech/models/api_service.dart'; // Import ApiService để gọi API
-import 'package:HDTech/screens/Auth/logIn_screen.dart';
+import 'package:donna_stroupe/models/api_service.dart'; // Import ApiService để gọi API
+import 'package:donna_stroupe/screens/Auth/logIn_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

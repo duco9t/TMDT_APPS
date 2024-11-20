@@ -1,5 +1,5 @@
-import 'package:HDTech/models/cart_model.dart';
-import 'package:HDTech/models/cart_service.dart';
+import 'package:donna_stroupe/models/cart_model.dart';
+import 'package:donna_stroupe/models/cart_service.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:logger/logger.dart'; // Import logger

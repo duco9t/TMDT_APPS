@@ -1,6 +1,6 @@
-import 'package:HDTech/models/account_service.dart'; // Import AccountService
-import 'package:HDTech/models/review_service.dart';
-import 'package:HDTech/screens/Auth/login_screen.dart';
+import 'package:donna_stroupe/models/account_service.dart'; // Import AccountService
+import 'package:donna_stroupe/models/review_service.dart';
+import 'package:donna_stroupe/screens/Auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

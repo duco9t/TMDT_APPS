@@ -1,14 +1,14 @@
-import 'package:HDTech/models/account_service.dart';
-import 'package:HDTech/models/tshirt_model.dart';
-import 'package:HDTech/models/review_model.dart';
-import 'package:HDTech/models/review_service.dart';
-import 'package:HDTech/models/user_model.dart';
-import 'package:HDTech/screens/Detail/Widget/add_review_screen.dart';
-import 'package:HDTech/screens/Detail/Widget/addto_cart.dart';
-import 'package:HDTech/screens/Detail/Widget/detail_app_bar.dart';
-import 'package:HDTech/screens/Detail/Widget/image_slider.dart';
-import 'package:HDTech/screens/Detail/Widget/items_details.dart';
-import 'package:HDTech/screens/Detail/Widget/product_review.dart';
+import 'package:donna_stroupe/models/account_service.dart';
+import 'package:donna_stroupe/models/review_model.dart';
+import 'package:donna_stroupe/models/review_service.dart';
+import 'package:donna_stroupe/models/tshirt_model.dart';
+import 'package:donna_stroupe/models/user_model.dart';
+import 'package:donna_stroupe/screens/Detail/Widget/add_review_screen.dart';
+import 'package:donna_stroupe/screens/Detail/Widget/addto_cart.dart';
+import 'package:donna_stroupe/screens/Detail/Widget/detail_app_bar.dart';
+import 'package:donna_stroupe/screens/Detail/Widget/image_slider.dart';
+import 'package:donna_stroupe/screens/Detail/Widget/items_details.dart';
+import 'package:donna_stroupe/screens/Detail/Widget/product_review.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -36,92 +36,97 @@ class _DetailScreenState extends State<DetailScreen> {
   // Hàm làm mới dữ liệu đánh giá
   void refreshReviews() {
     setState(() {
-      reviewData = fetchReviews(
-          widget.popularTshirtBar.id); // Lấy lại dữ liệu đánh giá
+      reviewData =
+          fetchReviews(widget.popularTshirtBar.id); // Lấy lại dữ liệu đánh giá
     });
   }
 
   // Hàm kiểm tra thông tin người dùng và mở dialog đánh giá
   Future<void> _handleReview() async {
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  String? userId = prefs.getString('id');
-  String? accessToken = prefs.getString('access_token');
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? userId = prefs.getString('id');
+    String? accessToken = prefs.getString('access_token');
 
-  if (userId != null && accessToken != null) {
-    // Lấy thông tin người dùng
-    AccountService accountService = AccountService();
-    var userDetails = await accountService.getUserDetails();
+    if (userId != null && accessToken != null) {
+      // Lấy thông tin người dùng
+      AccountService accountService = AccountService();
+      var userDetails = await accountService.getUserDetails();
 
-    if (userDetails != null) {
-      String username = userDetails['name'];
+      if (userDetails != null) {
+        String username = userDetails['name'];
 
-      // Mở dialog Write a Review và truyền các tham số
-      showDialog(
+        // Mở dialog Write a Review và truyền các tham số
+        showDialog(
+          // ignore: use_build_context_synchronously
+          context: context,
+          builder: (context) {
+            return ReviewPopup(
+              productId: widget.popularTshirtBar.id, // Truyền productId vào đây
+              onPostReview: (rating, comment) async {
+                bool success = await ReviewService().addReview(
+                  productId: widget.popularTshirtBar.id,
+                  userId: userId,
+                  username: username,
+                  rating: rating,
+                  comment: comment,
+                  token: accessToken,
+                );
+
+                if (success) {
+                  // Nếu đánh giá thành công, làm mới dữ liệu
+                  refreshReviews();
+                  // ignore: use_build_context_synchronously
+                  Navigator.of(context).pop(); // Đóng dialog
+                  // ignore: use_build_context_synchronously
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Review posted successfully!'),
+                      behavior: SnackBarBehavior
+                          .floating, // Đảm bảo SnackBar không đẩy lên
+                      margin: EdgeInsets.fromLTRB(
+                          10, 10, 10, 70), // Thêm khoảng cách dưới
+                    ),
+                  );
+                } else {
+                  // ignore: use_build_context_synchronously
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Failed to post review!'),
+                      behavior: SnackBarBehavior
+                          .floating, // Đảm bảo SnackBar không đẩy lên
+                      margin: EdgeInsets.fromLTRB(
+                          10, 10, 10, 70), // Thêm khoảng cách dưới
+                    ),
+                  );
+                }
+              },
+              onRefreshReviews: refreshReviews, // Truyền hàm làm mới ở đây
+            );
+          },
+        );
+      } else {
         // ignore: use_build_context_synchronously
-        context: context,
-        builder: (context) {
-          return ReviewPopup(
-            productId: widget.popularTshirtBar.id, // Truyền productId vào đây
-            onPostReview: (rating, comment) async {
-              bool success = await ReviewService().addReview(
-                productId: widget.popularTshirtBar.id,
-                userId: userId,
-                username: username,
-                rating: rating,
-                comment: comment,
-                token: accessToken,
-              );
-
-              if (success) {
-                // Nếu đánh giá thành công, làm mới dữ liệu
-                refreshReviews();
-                // ignore: use_build_context_synchronously
-                Navigator.of(context).pop(); // Đóng dialog
-                // ignore: use_build_context_synchronously
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Review posted successfully!'),
-                    behavior: SnackBarBehavior.floating, // Đảm bảo SnackBar không đẩy lên
-                    margin: EdgeInsets.fromLTRB(10, 10, 10, 70), // Thêm khoảng cách dưới
-                  ),
-                );
-              } else {
-                // ignore: use_build_context_synchronously
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Failed to post review!'),
-                    behavior: SnackBarBehavior.floating, // Đảm bảo SnackBar không đẩy lên
-                    margin: EdgeInsets.fromLTRB(10, 10, 10, 70), // Thêm khoảng cách dưới
-                  ),
-                );
-              }
-            },
-            onRefreshReviews: refreshReviews, // Truyền hàm làm mới ở đây
-          );
-        },
-      );
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Unable to retrieve user information!'),
+            behavior:
+                SnackBarBehavior.floating, // Đảm bảo SnackBar không đẩy lên
+            margin:
+                EdgeInsets.fromLTRB(10, 10, 10, 70), // Thêm khoảng cách dưới
+          ),
+        );
+      }
     } else {
       // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Unable to retrieve user information!'),
+          content: Text('No user information found!'),
           behavior: SnackBarBehavior.floating, // Đảm bảo SnackBar không đẩy lên
           margin: EdgeInsets.fromLTRB(10, 10, 10, 70), // Thêm khoảng cách dưới
         ),
       );
     }
-  } else {
-    // ignore: use_build_context_synchronously
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('No user information found!'),
-        behavior: SnackBarBehavior.floating, // Đảm bảo SnackBar không đẩy lên
-        margin: EdgeInsets.fromLTRB(10, 10, 10, 70), // Thêm khoảng cách dưới
-      ),
-    );
   }
-}
-
 
   @override
   Widget build(BuildContext context) {
@@ -168,8 +173,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ItemsDetails(
-                          popularTshirtBar: widget.popularTshirtBar),
+                      ItemsDetails(popularTshirtBar: widget.popularTshirtBar),
                       const SizedBox(height: 20),
                       FutureBuilder<Map<String, dynamic>>(
                         future: reviewData,
@@ -197,7 +201,8 @@ class _DetailScreenState extends State<DetailScreen> {
                                 ElevatedButton(
                                   onPressed: _handleReview,
                                   style: ElevatedButton.styleFrom(
-                                    backgroundColor: const Color.fromARGB(255, 48, 55, 78),
+                                    backgroundColor:
+                                        const Color.fromARGB(255, 48, 55, 78),
                                     foregroundColor: Colors.white,
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 40, vertical: 20),

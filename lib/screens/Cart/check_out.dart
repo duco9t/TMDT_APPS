@@ -1,9 +1,9 @@
-import 'package:HDTech/Provider/cart_provider.dart';
-import 'package:HDTech/constants.dart';
+import 'package:donna_stroupe/Provider/cart_provider.dart';
+import 'package:donna_stroupe/constants.dart';
+import 'package:donna_stroupe/screens/Checkout/check_out_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:HDTech/screens/Checkout/check_out_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final formatCurrency = NumberFormat.currency(
@@ -50,7 +50,8 @@ class CheckOutBox extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    formatCurrency.format(provider.subtotal), // Hiển thị subtotal
+                    formatCurrency
+                        .format(provider.subtotal), // Hiển thị subtotal
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -72,7 +73,8 @@ class CheckOutBox extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    formatCurrency.format(provider.totalPrice), // Hiển thị tổng giá trị giỏ hàng
+                    formatCurrency.format(
+                        provider.totalPrice), // Hiển thị tổng giá trị giỏ hàng
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:HDTech/models/config.dart';
+import 'package:donna_stroupe/models/config.dart';
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart'; // Import logger package
 

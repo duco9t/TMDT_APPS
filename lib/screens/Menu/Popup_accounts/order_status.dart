@@ -1,7 +1,7 @@
-import 'package:HDTech/constants.dart';
-import 'package:HDTech/models/order_model.dart';
-import 'package:HDTech/screens/Menu/Popup_accounts/order_detail.dart';
 import 'package:buttons_tabbar/buttons_tabbar.dart';
+import 'package:donna_stroupe/constants.dart';
+import 'package:donna_stroupe/models/order_model.dart';
+import 'package:donna_stroupe/screens/Menu/Popup_accounts/order_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';

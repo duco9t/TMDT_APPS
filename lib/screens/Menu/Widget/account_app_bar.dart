@@ -1,10 +1,10 @@
-import 'package:HDTech/models/account_service.dart';
-import 'package:HDTech/models/user_model.dart'; // Assuming you have the User model
-import 'package:HDTech/screens/Menu/Popup_accounts/delete_account.dart';
-import 'package:HDTech/screens/Menu/Popup_accounts/information_app.dart';
-import 'package:HDTech/screens/Menu/Popup_accounts/order_status.dart';
-import 'package:HDTech/screens/Menu/Popup_accounts/update_user_popup.dart'; // Add this import for the popup
-import 'package:HDTech/screens/nav_bar_screen.dart';
+import 'package:donna_stroupe/models/account_service.dart';
+import 'package:donna_stroupe/models/user_model.dart'; // Assuming you have the User model
+import 'package:donna_stroupe/screens/Menu/Popup_accounts/delete_account.dart';
+import 'package:donna_stroupe/screens/Menu/Popup_accounts/information_app.dart';
+import 'package:donna_stroupe/screens/Menu/Popup_accounts/order_status.dart';
+import 'package:donna_stroupe/screens/Menu/Popup_accounts/update_user_popup.dart'; // Add this import for the popup
+import 'package:donna_stroupe/screens/nav_bar_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -160,7 +160,10 @@ class _AccountPageState extends State<AccountPage> {
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
-                    colors: [Color.fromARGB(255, 34, 49, 97), Color.fromARGB(255, 145, 158, 199)],
+                    colors: [
+                      Color.fromARGB(255, 34, 49, 97),
+                      Color.fromARGB(255, 145, 158, 199)
+                    ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),

@@ -1,4 +1,4 @@
-import 'package:HDTech/screens/Cart/cart_screen.dart';
+import 'package:donna_stroupe/screens/Cart/cart_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:geocoding/geocoding.dart';

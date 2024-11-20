@@ -1,4 +1,4 @@
-import 'package:HDTech/models/tshirt_model.dart';
+import 'package:donna_stroupe/models/tshirt_model.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart'; // Import intl for currency formatting
 
@@ -60,10 +60,8 @@ class ItemsDetails extends StatelessWidget {
 
           _buildDetailRow("Quantity in Stock: ",
               popularTshirtBar.quantityInStock.toString()),
-          _buildDetailRow(
-              "Size: ", popularTshirtBar.size),
-          _buildDetailRow(
-              "Color: ", popularTshirtBar.color),
+          _buildDetailRow("Size: ", popularTshirtBar.size),
+          _buildDetailRow("Color: ", popularTshirtBar.color),
           _buildDetailRow("Brand: ", popularTshirtBar.brand),
           _buildDetailRow("Gender: ", popularTshirtBar.gender),
         ],

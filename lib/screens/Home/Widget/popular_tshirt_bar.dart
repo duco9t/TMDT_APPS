@@ -1,9 +1,9 @@
-import 'package:HDTech/Provider/cart_provider.dart';
-import 'package:HDTech/constants.dart';
-import 'package:HDTech/models/tshirt_model.dart';
-import 'package:HDTech/models/review_model.dart';
-import 'package:HDTech/screens/Auth/login_screen.dart';
-import 'package:HDTech/screens/Detail/detail_screen.dart';
+import 'package:donna_stroupe/Provider/cart_provider.dart';
+import 'package:donna_stroupe/constants.dart';
+import 'package:donna_stroupe/models/review_model.dart';
+import 'package:donna_stroupe/models/tshirt_model.dart';
+import 'package:donna_stroupe/screens/Auth/login_screen.dart';
+import 'package:donna_stroupe/screens/Detail/detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -39,8 +39,7 @@ class PopularTshirtBarState extends State<PopularTshirtBar> {
 
   void reloadTshirts() {
     setState(() {
-      futureTshirts =
-          loadTshirts(); // Triggers rebuild with the filtered data
+      futureTshirts = loadTshirts(); // Triggers rebuild with the filtered data
     });
   }
 
@@ -72,8 +71,7 @@ class PopularTshirtBarState extends State<PopularTshirtBar> {
       widget.filters.forEach((key, value) {
         if (key != 'price') {
           filteredTshirts = filteredTshirts
-              .where((tshirt) =>
-                  (tshirt.toJson()[key] as List).contains(value))
+              .where((tshirt) => (tshirt.toJson()[key] as List).contains(value))
               .toList();
         }
       });

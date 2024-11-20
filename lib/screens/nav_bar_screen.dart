@@ -1,9 +1,9 @@
-import 'package:HDTech/constants.dart';
-import 'package:HDTech/screens/Cart/cart_screen.dart';
-import 'package:HDTech/screens/Home/home_screen.dart';
-import 'package:HDTech/screens/Menu/menu_user.dart';
-import 'package:HDTech/screens/Search/search_screen.dart';
 import 'package:animations/animations.dart';
+import 'package:donna_stroupe/constants.dart';
+import 'package:donna_stroupe/screens/Cart/cart_screen.dart';
+import 'package:donna_stroupe/screens/Home/home_screen.dart';
+import 'package:donna_stroupe/screens/Menu/menu_user.dart';
+import 'package:donna_stroupe/screens/Search/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

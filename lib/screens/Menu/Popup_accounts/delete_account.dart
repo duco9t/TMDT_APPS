@@ -14,7 +14,7 @@ class DeleteAccount extends StatelessWidget {
             style: TextStyle(color: Colors.black), // Ensure text is visible
           ),
           content: const Text(
-            'You need to contact our Admin team or visit the HDTech center for account deletion assistance.',
+            'You need to contact our Admin team or visit the donna_stroupe center for account deletion assistance.',
             style: TextStyle(color: Colors.black), // Set content text color
           ),
           actions: [

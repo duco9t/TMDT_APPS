@@ -1,4 +1,4 @@
-import 'package:HDTech/models/user_model.dart';
+import 'package:donna_stroupe/models/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

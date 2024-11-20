@@ -1,6 +1,6 @@
-import 'package:HDTech/constants.dart';
-import 'package:HDTech/models/tshirt_model.dart';
-import 'package:HDTech/screens/Detail/detail_screen.dart';
+import 'package:donna_stroupe/constants.dart';
+import 'package:donna_stroupe/models/tshirt_model.dart';
+import 'package:donna_stroupe/screens/Detail/detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -45,9 +45,7 @@ class PopularTshirtBarState extends State<PopularTshirtBar> {
         final filteredTshirts = tshirts.where((tshirt) {
           final query = widget.searchQuery.toLowerCase();
           return tshirt.name.toLowerCase().contains(query) ||
-              tshirt.brand
-                  .toLowerCase()
-                  .contains(query); // Tìm kiếm theo brand
+              tshirt.brand.toLowerCase().contains(query); // Tìm kiếm theo brand
         }).toList();
 
         return RefreshIndicator(
@@ -99,8 +97,7 @@ class _TshirtItemState extends State<TshirtItem> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) =>
-                DetailScreen(popularTshirtBar: widget.tshirt),
+            builder: (context) => DetailScreen(popularTshirtBar: widget.tshirt),
           ),
         );
       },
@@ -138,7 +135,8 @@ class _TshirtItemState extends State<TshirtItem> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
                     child: Text(
-                      widget.tshirt.name, // Display productsTypeName before name
+                      widget
+                          .tshirt.name, // Display productsTypeName before name
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

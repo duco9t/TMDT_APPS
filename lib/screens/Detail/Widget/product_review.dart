@@ -1,4 +1,4 @@
-import 'package:HDTech/models/review_model.dart';
+import 'package:donna_stroupe/models/review_model.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 

@@ -1,9 +1,9 @@
-import 'package:HDTech/Provider/cart_provider.dart';
+import 'package:donna_stroupe/Provider/cart_provider.dart';
+import 'package:donna_stroupe/constants.dart';
+import 'package:donna_stroupe/models/tshirt_model.dart';
+import 'package:donna_stroupe/screens/Auth/login_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:HDTech/constants.dart';
-import 'package:HDTech/models/tshirt_model.dart';
 import 'package:provider/provider.dart';
-import 'package:HDTech/screens/Auth/login_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AddToCart extends StatefulWidget {

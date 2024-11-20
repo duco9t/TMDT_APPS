@@ -1,11 +1,11 @@
-import 'package:HDTech/Provider/cart_provider.dart';
-import 'package:HDTech/constants.dart';
-import 'package:HDTech/screens/Cart/check_out.dart';
-import 'package:HDTech/screens/nav_bar_screen.dart';
+import 'package:donna_stroupe/Provider/cart_provider.dart';
+import 'package:donna_stroupe/constants.dart';
+import 'package:donna_stroupe/screens/Cart/check_out.dart';
+import 'package:donna_stroupe/screens/nav_bar_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:intl/intl.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final formatCurrency = NumberFormat.currency(
@@ -19,8 +19,6 @@ class CartScreen extends StatefulWidget {
 }
 
 class _CartScreenState extends State<CartScreen> {
-
-
   late Future<void> _fetchCartFuture;
 
   String? userId;

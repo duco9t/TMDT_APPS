@@ -1,7 +1,7 @@
-import 'package:HDTech/models/api_service.dart';
-import 'package:HDTech/screens/Auth/logIn_screen.dart';
-import 'package:HDTech/screens/Auth/otp_screeen.dart';
-import 'package:HDTech/screens/nav_bar_screen.dart';
+import 'package:donna_stroupe/models/api_service.dart';
+import 'package:donna_stroupe/screens/Auth/logIn_screen.dart';
+import 'package:donna_stroupe/screens/Auth/otp_screeen.dart';
+import 'package:donna_stroupe/screens/nav_bar_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -167,7 +167,8 @@ class _SignUpSceneState extends State<SignUpScene> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Color.fromARGB(255, 40, 65, 119)),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 40, 65, 119)),
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
@@ -186,7 +187,8 @@ class _SignUpSceneState extends State<SignUpScene> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Color.fromARGB(255, 40, 65, 119)),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 40, 65, 119)),
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
@@ -206,7 +208,8 @@ class _SignUpSceneState extends State<SignUpScene> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Color.fromARGB(255, 40, 65, 119)),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 40, 65, 119)),
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
@@ -226,7 +229,8 @@ class _SignUpSceneState extends State<SignUpScene> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Color.fromARGB(255, 40, 65, 119)),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 40, 65, 119)),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         suffixIcon: IconButton(
@@ -258,7 +262,8 @@ class _SignUpSceneState extends State<SignUpScene> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Color.fromARGB(255, 40, 65, 119)),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 40, 65, 119)),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         suffixIcon: IconButton(

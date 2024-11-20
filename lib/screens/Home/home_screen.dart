@@ -1,9 +1,9 @@
-import 'package:HDTech/models/tshirt_model.dart';
-import 'package:HDTech/screens/Home/Widget/banner_app_bar.dart';
-import 'package:HDTech/screens/Home/Widget/filter_drawer.dart';
-import 'package:HDTech/screens/Home/Widget/home_app_bar.dart';
-import 'package:HDTech/screens/Home/Widget/popular_tshirt_bar.dart';
-import 'package:HDTech/screens/Home/Widget/trademark_app_bar.dart';
+import 'package:donna_stroupe/models/tshirt_model.dart';
+import 'package:donna_stroupe/screens/Home/Widget/banner_app_bar.dart';
+import 'package:donna_stroupe/screens/Home/Widget/filter_drawer.dart';
+import 'package:donna_stroupe/screens/Home/Widget/home_app_bar.dart';
+import 'package:donna_stroupe/screens/Home/Widget/popular_tshirt_bar.dart';
+import 'package:donna_stroupe/screens/Home/Widget/trademark_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:shared_preferences/shared_preferences.dart'; // Ensure this import is present
@@ -73,8 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Handle filter changes and update the tshirt list
   void _onFilterChanged(Map<String, dynamic> filters) {
-    _fetchTshirts(
-        filters: filters); // Fetch tshirts with the applied filters
+    _fetchTshirts(filters: filters); // Fetch tshirts with the applied filters
     _refreshData(); // Automatically reload after applying the filters
   }
 

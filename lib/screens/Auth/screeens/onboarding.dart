@@ -1,4 +1,4 @@
-import 'package:HDTech/screens/Auth/logIn_screen.dart';
+import 'package:donna_stroupe/screens/Auth/logIn_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/body_1.dart';

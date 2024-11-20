@@ -1,5 +1,5 @@
+import 'package:donna_stroupe/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:HDTech/constants.dart';
 
 class Description extends StatelessWidget {
   final String description;

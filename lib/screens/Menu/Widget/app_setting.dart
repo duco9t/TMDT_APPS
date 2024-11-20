@@ -1,4 +1,4 @@
-import 'package:HDTech/constants.dart';
+import 'package:donna_stroupe/constants.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart'; // Import thư viện
@@ -72,12 +72,11 @@ class AppSettingState extends State<AppSetting> {
     await _secureStorage.delete(key: 'email');
     await _secureStorage.delete(key: 'password');
   }
-  
-  Future<bool> getEnableLocationServices() async {
-  final prefs = await SharedPreferences.getInstance();
-  return prefs.getBool('locationServices') ?? false;
-}
 
+  Future<bool> getEnableLocationServices() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool('locationServices') ?? false;
+  }
 
   @override
   Widget build(BuildContext context) {

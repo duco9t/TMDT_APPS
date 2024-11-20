@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
-import 'package:HDTech/models/api_service.dart';
-import 'package:HDTech/screens/Auth/register_screen.dart';
-import 'package:HDTech/screens/nav_bar_screen.dart'; // Import trang BottomNavBar
+import 'package:donna_stroupe/models/api_service.dart';
+import 'package:donna_stroupe/screens/Auth/register_screen.dart';
+import 'package:donna_stroupe/screens/nav_bar_screen.dart'; // Import trang BottomNavBar
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -163,7 +163,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Color.fromARGB(255, 40, 65, 119)),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 40, 65, 119)),
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
@@ -181,7 +182,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Color.fromARGB(255, 40, 65, 119)),
+                          borderSide: const BorderSide(
+                              color: Color.fromARGB(255, 40, 65, 119)),
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
@@ -218,7 +220,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: OutlinedButton(
                       onPressed: _authenticateWithFingerprint,
                       style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: Color.fromARGB(255, 40, 65, 119), width: 2),
+                        side: const BorderSide(
+                            color: Color.fromARGB(255, 40, 65, 119), width: 2),
                         padding: const EdgeInsets.symmetric(vertical: 15),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),

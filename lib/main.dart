@@ -1,6 +1,6 @@
-import 'package:HDTech/Provider/cart_provider.dart';
-import 'package:HDTech/presentation/splash/pages/splash.dart';
-import 'package:HDTech/screens/Auth/screeens/onboarding.dart';
+import 'package:donna_stroupe/Provider/cart_provider.dart';
+import 'package:donna_stroupe/presentation/splash/pages/splash.dart';
+import 'package:donna_stroupe/screens/Auth/screeens/onboarding.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

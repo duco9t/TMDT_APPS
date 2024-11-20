@@ -1,5 +1,5 @@
-import 'package:HDTech/models/tshirt_model.dart'; // Import model Tshirt để có dữ liệu
-import 'package:HDTech/screens/Search/popular_computer_bar.dart'; // Giữ lại import này
+import 'package:donna_stroupe/models/tshirt_model.dart'; // Import model Tshirt để có dữ liệu
+import 'package:donna_stroupe/screens/Search/popular_computer_bar.dart'; // Giữ lại import này
 import 'package:flutter/material.dart';
 
 class SearchScreen extends StatefulWidget {

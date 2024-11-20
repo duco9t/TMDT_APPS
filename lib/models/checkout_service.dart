@@ -1,10 +1,13 @@
 import 'dart:convert';
+
+import 'package:donna_stroupe/models/cart_model.dart';
+import 'package:donna_stroupe/models/config.dart';
 import 'package:http/http.dart' as http;
-import 'package:HDTech/models/config.dart';
+import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart'; // Import SharedPreferences
-import 'package:logger/logger.dart'; 
-import 'package:HDTech/models/cart_model.dart';
+
 import 'checkout_model.dart';
+
 // Create an instance of Logger
 final Logger logger = Logger();
 
@@ -15,7 +18,7 @@ Future<String?> getUserId() async {
 
 class CheckoutService {
   // Get Order Details
-   // Fetch cart details using userId (for checkout)
+  // Fetch cart details using userId (for checkout)
   static Future<CheckoutDetails> getCheckoutDetails(String userId) async {
     final url = Uri.parse('${Config.baseUrl}/cart/get-cart/$userId');
     final response = await http.get(url);
@@ -29,7 +32,7 @@ class CheckoutService {
     }
   }
 
-   // Tạo đơn hàng (POST)
+  // Tạo đơn hàng (POST)
   static Future<Map<String, dynamic>> createOrder({
     required String userId,
     required List<CartItem> items,
@@ -39,9 +42,8 @@ class CheckoutService {
     required String email,
     required String token,
   }) async {
-  
     final url = Uri.parse('${Config.baseUrl}/order/create');
-     final headers = {
+    final headers = {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer $token',
     };
@@ -69,6 +71,4 @@ class CheckoutService {
       return {"success": false, "message": e.toString()};
     }
   }
-
-  
 }

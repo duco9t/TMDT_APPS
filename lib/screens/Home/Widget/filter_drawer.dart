@@ -1,5 +1,5 @@
-import 'package:HDTech/constants.dart'; // Import constants.dart
-import 'package:HDTech/models/tshirt_model.dart';
+import 'package:donna_stroupe/constants.dart'; // Import constants.dart
+import 'package:donna_stroupe/models/tshirt_model.dart';
 import 'package:flutter/material.dart';
 
 class FilterDrawer extends StatefulWidget {
@@ -25,8 +25,7 @@ class FilterDrawerState extends State<FilterDrawer> {
     super.initState();
 
     // Extract unique values from the list of tshirts for each filter
-    _sizes =
-        _getUniqueValues(widget.tshirts, (tshirt) => tshirt.size);
+    _sizes = _getUniqueValues(widget.tshirts, (tshirt) => tshirt.size);
     _colors = _getUniqueValues(widget.tshirts, (tshirt) => tshirt.color);
     _brands = _getUniqueValues(widget.tshirts, (tshirt) => tshirt.brand);
     _gender = _getUniqueValues(widget.tshirts, (tshirt) => tshirt.gender);
