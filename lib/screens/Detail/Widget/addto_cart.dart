@@ -113,9 +113,11 @@ class _AddToCartState extends State<AddToCart> {
                   bool shouldLogin = await _showLoginDialog(
                       context); // Hiển thị hộp thoại yêu cầu đăng nhập
                   if (!shouldLogin)
+                    // ignore: curly_braces_in_flow_control_structures
                     return; // Nếu người dùng không muốn đăng nhập, không làm gì
                   await _navigateToLogin(); // Điều hướng đến màn hình đăng nhập
                   if (!_isLoggedIn)
+                    // ignore: curly_braces_in_flow_control_structures
                     return; // Nếu sau khi đăng nhập người dùng vẫn chưa đăng nhập, không tiếp tục
                 }
 
@@ -131,10 +133,11 @@ class _AddToCartState extends State<AddToCart> {
 
                 // Nếu người dùng đã đăng nhập, thêm sản phẩm vào giỏ hàng
                 final productId = widget.popularTshirtBar.id
-                    ?.toString(); // Lấy ID sản phẩm từ đối tượng popularTshirtBar
+                    .toString(); // Lấy ID sản phẩm từ đối tượng popularTshirtBar
                 final quantity = currentIndex;
 
                 // Gọi CartProvider để thêm sản phẩm vào giỏ hàng
+                // ignore: unnecessary_null_comparison
                 if (productId != null) {
                   provider.addItem(userId, productId, quantity);
                 }
@@ -190,7 +193,7 @@ Future<bool> _showLoginDialog(BuildContext context) async {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   // Tiêu đề
-                  Text(
+                  const Text(
                     "Login Required",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -221,18 +224,18 @@ Future<bool> _showLoginDialog(BuildContext context) async {
                           Navigator.of(context)
                               .pop(false); // Nếu người dùng chọn "No"
                         },
+                        style: TextButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(horizontal: 30),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
                         child: Text(
                           "No",
                           style: TextStyle(
                             color: Colors.red[400],
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        style: TextButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 30),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30),
                           ),
                         ),
                       ),
@@ -244,18 +247,18 @@ Future<bool> _showLoginDialog(BuildContext context) async {
                           Navigator.of(context)
                               .pop(true); // Nếu người dùng chọn "Yes"
                         },
-                        child: Text(
+                        style: TextButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(horizontal: 30),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                        child: const Text(
                           "Yes",
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        style: TextButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(horizontal: 30),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30),
                           ),
                         ),
                       ),

@@ -1,6 +1,9 @@
 import 'package:donna_stroupe/constants.dart'; // Import constants.dart
 import 'package:donna_stroupe/models/tshirt_model.dart';
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
+
+final logger = Logger(); // Có thể dùng globally
 
 class FilterDrawer extends StatefulWidget {
   final Function(Map<String, dynamic>) onFilterChanged;
@@ -70,6 +73,8 @@ class FilterDrawerState extends State<FilterDrawer> {
           onChanged: (String? value) {
             setState(() {
               _selectedFilters[filterKey] = value;
+              logger.d(
+                  'Filter Key: $filterKey, Value: $value'); // Ghi log khi chọn bộ lọc
               _sendUpdatedFilters();
             });
           },
@@ -84,6 +89,7 @@ class FilterDrawerState extends State<FilterDrawer> {
     final cleanedFilters = Map<String, dynamic>.from(_selectedFilters);
     cleanedFilters.removeWhere(
         (key, value) => value == null || (value is List && value.isEmpty));
+    logger.d('Selected Filters: $cleanedFilters'); // Thay thế print bằng logger
 
     // Send updated filters
     widget.onFilterChanged(cleanedFilters);

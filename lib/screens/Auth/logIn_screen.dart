@@ -264,10 +264,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ],
                   ),
                 ),
-                Container(
-                  height: 2,
-                  color: Colors.grey[300],
-                ),
               ],
             ),
           ),

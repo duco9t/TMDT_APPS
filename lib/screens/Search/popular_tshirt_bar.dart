@@ -51,15 +51,19 @@ class PopularTshirtBarState extends State<PopularTshirtBar> {
         return RefreshIndicator(
           onRefresh: _refreshTshirts,
           child: GridView.builder(
-            padding: const EdgeInsets.symmetric(
-                horizontal: 20.0), // Add padding for GridView items
+            padding: const EdgeInsets.only(
+              left: 20.0, // Padding bên trái
+              right: 20.0, // Padding bên phải
+              bottom:
+                  70.0, // Padding bên dưới để tránh bị che bởi BottomNavigationBar
+            ),
             shrinkWrap: true,
             physics: const AlwaysScrollableScrollPhysics(),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               crossAxisSpacing: 10.0,
               mainAxisSpacing: 10.0,
-              childAspectRatio: 0.85,
+              childAspectRatio: 0.65,
             ),
             itemCount: filteredTshirts.length,
             itemBuilder: (context, index) {
@@ -87,8 +91,7 @@ class _TshirtItemState extends State<TshirtItem> {
 
   @override
   Widget build(BuildContext context) {
-    final formatCurrency =
-        NumberFormat.currency(locale: 'vi_VN', symbol: 'VNĐ');
+    final formatCurrency = NumberFormat.currency(locale: 'vi_VN', symbol: 'đ');
 
     return GestureDetector(
       onTapDown: (_) => setState(() => scale = 0.95),
@@ -122,7 +125,7 @@ class _TshirtItemState extends State<TshirtItem> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    height: 100,
+                    height: 150,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       image: DecorationImage(
@@ -148,41 +151,60 @@ class _TshirtItemState extends State<TshirtItem> {
                   const SizedBox(height: 4),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Text(
-                      formatCurrency.format(widget.tshirt.price),
-                      style: const TextStyle(
-                        fontSize: 18,
-                        color: kprimaryColor,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Discounted Price
+                        Text(
+                          formatCurrency.format(widget.tshirt.promotionPrice),
+                          style: const TextStyle(
+                            fontSize: 18,
+                            color: kprimaryColor,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        // Original Price and Discount Percentage
+                        if (widget.tshirt.price !=
+                                widget.tshirt.promotionPrice &&
+                            widget.tshirt.discount > 0)
+                          Row(
+                            children: [
+                              // Original Price (crossed out)
+                              Text(
+                                formatCurrency.format(widget.tshirt.price),
+                                style: const TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.grey,
+                                  decoration: TextDecoration.lineThrough,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              // Discount Percentage
+                              Container(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 6, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: const Color.fromARGB(255, 208, 223,
+                                      255), // Light red background
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: Text(
+                                  '-${widget.tshirt.discount.toStringAsFixed(0)}%',
+                                  style: const TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.blue,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                      ],
                     ),
                   ),
                 ],
               ),
             ),
-            // Positioned(
-            //   bottom: 0,
-            //   right: 0,
-            //   child: GestureDetector(
-            //     onTap: () => _addToCart(widget.tshirt.name),
-            //     child: Container(
-            //       width: 35,
-            //       height: 35,
-            //       decoration: const BoxDecoration(
-            //         color: kprimaryColor,
-            //         borderRadius: BorderRadius.only(
-            //           topLeft: Radius.circular(12),
-            //           bottomRight: Radius.circular(12),
-            //         ),
-            //       ),
-            //       child: const Icon(
-            //         Icons.add,
-            //         color: Colors.white,
-            //         size: 20,
-            //       ),
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),

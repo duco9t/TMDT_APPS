@@ -5,8 +5,8 @@ import 'package:intl/intl.dart';
 import 'package:logger/logger.dart'; // Import logger
 import 'package:provider/provider.dart';
 
-final formatCurrency = NumberFormat.currency(
-    locale: 'vi_VN', symbol: 'VNĐ'); // Format currency in VND
+final formatCurrency =
+    NumberFormat.currency(locale: 'vi_VN', symbol: 'đ'); // Format currency in đ
 
 class CartProvider with ChangeNotifier {
   final CartService _cartService = CartService();
@@ -16,11 +16,23 @@ class CartProvider with ChangeNotifier {
   List<CartItem> get cartItems => _cartItems;
   double get subtotal {
     return _cartItems.fold(0.0, (sum, item) {
-      return sum + (item.price * item.quantity);
+      return sum + (item.promotionPrice * item.quantity);
     });
   }
 
   double get totalPrice => subtotal;
+
+  Future<void> loadCart(String userId) async {
+    // Thực hiện logic để tải dữ liệu giỏ hàng từ server hoặc database
+    // Ví dụ: Gọi API, sau đó gán dữ liệu cho `cartItems`
+    _cartItems = await fetchCartFromServer(userId);
+    notifyListeners();
+  }
+
+  Future<List<CartItem>> fetchCartFromServer(String userId) async {
+    // Gọi API hoặc truy vấn dữ liệu tại đây
+    return []; // Trả về danh sách CartItem (hoặc thay bằng dữ liệu thực tế)
+  }
 
   Future<void> fetchCart(String userId) async {
     _logger.i("Fetching cart for user: $userId");
@@ -102,7 +114,7 @@ class CartProvider with ChangeNotifier {
         _cartItems[index].quantity = currentQuantity + 1;
 
         // Cập nhật số lượng trong giỏ hàng ở phía server
-        await _cartService.updateCartItem(
+        await _cartService.addToCart(
             userId, productId, _cartItems[index].quantity);
 
         // Cập nhật UI

@@ -13,7 +13,7 @@ class MyImageSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 250, // Adjust this height as per your design requirement
+      height: 500, // Adjust this height as per your design requirement
       child: PageView.builder(
         onPageChanged: onChange,
         itemCount: images.length,

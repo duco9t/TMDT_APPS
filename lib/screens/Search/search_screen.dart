@@ -1,5 +1,5 @@
 import 'package:donna_stroupe/models/tshirt_model.dart'; // Import model Tshirt để có dữ liệu
-import 'package:donna_stroupe/screens/Search/popular_computer_bar.dart'; // Giữ lại import này
+import 'package:donna_stroupe/screens/Search/popular_tshirt_bar.dart'; // Giữ lại import này
 import 'package:flutter/material.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -75,7 +75,7 @@ class SearchScreenState extends State<SearchScreen> {
                 } else if (snapshot.hasError) {
                   return Center(child: Text('Error: ${snapshot.error}'));
                 } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-                  return const Center(child: Text('No computers found.'));
+                  return const Center(child: Text('No tshirt found.'));
                 }
 
                 return RefreshIndicator(

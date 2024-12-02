@@ -88,7 +88,7 @@ class OrderStatusPageState extends State<OrderStatusPage>
 
   String formatPrice(double price) {
     final formatter = NumberFormat("#,###", "en_US");
-    return "${formatter.format(price)} VNĐ";
+    return "${formatter.format(price)} đ";
   }
 
   String truncateString(String text, {int maxLength = 12}) {
@@ -175,7 +175,6 @@ class OrderStatusPageState extends State<OrderStatusPage>
                           subtotal: order.totalPrice,
                           shipping: order.shippingFee,
                           totalPrice: order.orderTotal,
-                          VATorder: order.vatOrder,
                           name: order.name,
                           phone: order.phone,
                         ),

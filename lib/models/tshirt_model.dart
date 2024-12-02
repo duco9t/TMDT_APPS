@@ -2,8 +2,11 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:logger/logger.dart';
 
 import 'config.dart'; // Import Config for base URL
+
+final logger = Logger(); // Có thể dùng globally
 
 class Tshirt {
   final String id;
@@ -13,11 +16,12 @@ class Tshirt {
   final String color;
   final String brand;
   final String gender;
-  final String category;
   final double price;
   final String quantityInStock;
   int quantity;
-  final String? bannerUrl; // Thêm bannerUrl, có thể null
+  final String? bannerUrl;
+  final double discount;
+  final double promotionPrice;
 
   Tshirt({
     required this.id,
@@ -29,12 +33,12 @@ class Tshirt {
     required this.color,
     required this.brand,
     required this.gender,
-    required this.category,
     this.quantity = 1,
     this.bannerUrl,
+    required this.discount,
+    required this.promotionPrice,
   });
 
-  // Add this toJson method to resolve the error
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -44,8 +48,9 @@ class Tshirt {
       'color': color,
       'brand': brand,
       'gender': gender,
-      'category': category,
       'price': price,
+      'discount': discount,
+      'promotionPrice': promotionPrice,
     };
   }
 
@@ -62,11 +67,13 @@ class Tshirt {
       bannerUrl: json['bannerUrl'] as String?, // Nếu không có thì null
       size: json['size'] as String? ?? 'Unknown Size',
       color: json['color'] as String? ?? 'Unknown Color',
-      brand: json['brand'] as String? ??
-          'Unknown Brand' as String? ??
-          'Unknown Tshirt',
+      brand: json['brand'] as String? ?? 'Unknown Brand',
       gender: json['gender'] as String? ?? 'Unknown Gender',
-      category: json['category'] as String? ?? 'Unknown Category',
+      discount:
+          json['discount'] is num ? (json['discount'] as num).toDouble() : 0,
+      promotionPrice: json['promotionPrice'] != null
+          ? (json['promotionPrice'] as num).toDouble()
+          : 0.0,
     );
   }
 }
